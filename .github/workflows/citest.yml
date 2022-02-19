@@ -36,6 +36,7 @@ jobs:
       uses: mr-smithers-excellent/docker-build-push@v4
       with:
         image: zelfick/javagradle
+        # tags: v1, latest  Option an algorithm would made up the version
         registry: docker.io
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD}}
